@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f6f9fc;
+}
+
+.top-banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.top-banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.appointment-options {
+    padding: 20px;
+    background: #e9f3ff;
+}
+
+.appointment-options .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.appointment-options button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.appointment-options button:hover {
+    background-color: #005fa3;
+}
+
+/* Ajuste para o contêiner do formulário */
+.form-section {
+    padding: 20px;
+    background: white;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajuste para os inputs e botões */
+form input, form label, form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #005fa3;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+#mensagem {
+    margin-top: 15px;
+    color: green;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Ajuste para a seção de frases */
+.frases {
+    padding: 20px;
+    background: #eef3f9;
+    text-align: center;
+}
+
+.frases ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.frases li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .form-section {
+        max-width: 90%; /* Ajusta a largura para ocupar quase toda a tela */
+        padding: 15px;
+    }
+
+    form input, form label, form button {
+        font-size: 14px; /* Reduz o tamanho da fonte para caber melhor */
+    }
+
+    .frases li {
+        font-size: 14px; /* Ajusta o tamanho da fonte das frases */
+    }
+
+    .top-banner img {
+        width: 100%; /* Garante que o banner ocupe toda a largura da tela */
+        height: auto;
+    }
+
+    .buttons {
+        flex-direction: column; /* Empilha os botões em dispositivos móveis */
+        gap: 10px;
+    }
+}

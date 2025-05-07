@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcação de Consulta</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
+</head>
+<body>
+
+  <header class="top-banner">
+    <img src="imagem/Título.jpg" alt="Banner Terapia">
+    <div class="banner-text">
+      <h1>Encontre equilíbrio emocional com a terapia</h1>
+      <p>Agende sua consulta de forma simples e rápida.</p>
+    </div>
+  </header>
+
+  <section class="appointment-options">
+    <h2>Escolha o tipo de atendimento:</h2>
+    <div class="buttons">
+      <button onclick="selecionarTipo('Online')">Atendimento Online</button>
+      <button onclick="selecionarTipo('Presencial')">Atendimento Presencial</button>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h2>Agende sua Consulta</h2>
+    <form id="consulta-form">
+      <input type="text" id="nome" placeholder="Nome completo" required>
+      <input type="text" id="cidade" placeholder="Cidade" required>
+      <label for="dia">Dia disponível:</label>
+      <input type="date" id="dia" required>
+      <label for="hora">Horário disponível:</label>
+      <input type="time" id="hora" required>
+      <input type="hidden" id="tipo" name="tipo">
+      <button type="submit">Confirmar Agendamento</button>
+    </form>
+    <p id="mensagem"></p>
+  </section>
+
+  <section class="frases">
+    <h3></h3>
+    <ul>
+      <li>"A terapia é um espaço seguro para ser você mesmo."</li>
+      <li>"Cuidar da mente é um ato de amor próprio."</li>
+      <li>"Transformações reais começam com pequenas conversas."</li>
+    </ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
